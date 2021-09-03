@@ -22,11 +22,40 @@
                      </div>
                 </a>
                  <form action="#" class="headerForm">
-                      <select name="browse" class="headerBrowse">
-                         <option value="Browse">Browse</option>
-                         <option value="2">2</option>
-                         <option value="3">3</option>
-                     </select>
+                     <div class="popUpMenuBrowse">
+                        <button class="headerBrowse">
+                          <p class="textHeaderBrowse">
+                              Browse
+                              <i class="fas fa-caret-down"></i>
+                          </p>
+                        </button>
+                        <div class="popUpMenu">
+                            <div class="square"></div>
+                            <div class="popUpHeading">WOMEN</div>
+                            <div class="popUpLine"></div>
+                            <ul>
+                                <li><a href="#" class="popUpLink">Dresses</a></li>
+                                <li><a href="#" class="popUpLink">Tops</a></li>
+                                <li><a href="#" class="popUpLink">Sweaters/Knits</a></li>
+                                <li><a href="#" class="popUpLink">Jachets/Coats</a></li>
+                                <li><a href="#" class="popUpLink">Blazers</a></li>
+                                <li><a href="#" class="popUpLink">Denim</a></li>
+                                <li><a href="#" class="popUpLink">Leggings/Pants</a></li>
+                                <li><a href="#" class="popUpLink">Skirts/Shorts</a></li>
+                                <li><a href="#" class="popUpLink">Accessories</a></li>
+                            </ul>
+                            <div class="popUpHeading">MEN</div>
+                            <div class="popUpLine"></div>
+                            <ul>
+                                <li><a href="#" class="popUpLink">Tees/Tank tops</a></li>
+                                <li><a href="#" class="popUpLink">Shirts/Polos</a></li>
+                                <li><a href="#" class="popUpLink">Sweaters</a></li>
+                                <li><a href="#" class="popUpLink">Sweathirts/Hoodies</a></li>
+                                <li><a href="#" class="popUpLink">Blazers</a></li>
+                                <li><a href="#" class="popUpLink">Jackets/Vests</a></li>
+                            </ul>
+                        </div>
+                     </div>
                      <input type="text" class="headerInput" placeholder="Search for item...">
                      <button class="headerButton">
                         <i class="fas fa-search"></i>
@@ -34,9 +63,82 @@
                  </form>
              </div>
              <div class="headerRight">
-                 <div class="basket">
-                     <img src="img/Forma_1.svg" alt="basket">
-                 </div>
+                <div class="basketMenu">
+                    <div class="basket">
+                       <a href="#">
+                           <img src="img/Forma_1.svg" alt="basket">
+                        </a>
+                    </div>
+                       <div class="popUpBasket">
+                           <div class="square sqBasket"></div>
+                           <div class="basketCard">
+                                <div class="cardLeftBasket">
+                                   <div class="basketImg">
+                                         <img src="img/Layer43.svg" alt="cardImg">
+                                   </div>
+                                   <div class="basketText">
+                                        <div class="cardHeader">
+                                            REBOX ZANE
+                                        </div>
+                                        <div class="cardStars">
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="cardPrise">
+                                            1 x $250
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cardRightBasket">
+                                    <div class="cardDelete">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="basketCard">
+                               <div class="cardLeftBasket">
+                                   <div class="basketImg">
+                                        <img src="img/Layer44.svg" alt="cardImg">
+                                   </div>
+                                   <div class="basketText">
+                                        <div class="cardHeader">
+                                             REBOX ZANE
+                                        </div>
+                                        <div class="cardStars">
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="cardPrise">
+                                             1 x $250
+                                        </div>
+                                   </div>
+                               </div>
+                               <div class="cardRight">
+                                    <div class="cardDelete">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="calcBasket">
+                               <div class="total">
+                                   TOTAL
+                                </div>
+                               <div class="calcPrise">
+                                   $500.00
+                                </div>
+                           </div>
+                           <div class="basketButtons">
+                             <a href="#">CHECKOUT</a>
+                             <a href="#">GO TO CART</a>
+                           </div>
+                        </div> 
+                   </div>
                  <select name="Myacc" class="headerMyAcc">
                     <option value="1">My account</option>
                     <option value="2">Menu 2</option>
@@ -44,13 +146,75 @@
                 </select>
              </div>
          </div>
+         </div>
    </div>
    <nav class="menu">
        <div class="container nav">
              <ul>
-                 <li> <a href="#">HOME</a></li>
+                 <li class="navHome"> <a href="#">HOME</a>
+                 <div class="miniMenu">
+                     <div class="square sqMiniMenu"></div>
+                     <div class="popUpHeading">MEN</div>
+                     <div class="popUpLine"></div>
+                     <div class="miniMenuLink" >
+                        <a href="#">New Arrivals</a>
+                     </div>
+                 </div>
+                </li>
                  <li> <a href="#">MEN</a></li>
-                 <li> <a href="#">WOMEN</a></li>
+                 <li class="navWomen"><a href="#">WOMEN</a>
+                    <div class="womenMenu">
+                        <div class="square sqWomenMenu"></div>
+                        <div class="womenMenuBlock">
+                            <div class="womenMenuHeader">WOMEN</div>
+                            <div class="womenMenuLine"></div>
+                            <ul>
+                                <li><a href="#" class="popUpLink">Dresses</a></li>
+                                <li><a href="#" class="popUpLink">Tops</a></li>
+                                <li><a href="#" class="popUpLink">Sweaters/Knits</a></li>
+                                <li><a href="#" class="popUpLink">Jachets/Coats</a></li>
+                                <li><a href="#" class="popUpLink">Blazers</a></li>
+                                <li><a href="#" class="popUpLink">Denim</a></li>
+                                <li><a href="#" class="popUpLink">Leggings/Pants</a></li>
+                                <li><a href="#" class="popUpLink">Skirts/Shorts</a></li>
+                                <li><a href="#" class="popUpLink">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="womenMenuBlock">
+                            <div class="womenMenuHeader">WOMEN</div>
+                            <div class="womenMenuLine"></div>
+                            <ul>
+                                <li><a href="#" class="popUpLink">Dresses</a></li>
+                                <li><a href="#" class="popUpLink">Tops</a></li>
+                                <li><a href="#" class="popUpLink">Sweaters/Knits</a></li>
+                                <li><a href="#" class="popUpLink">Jachets/Coats</a></li>
+                            </ul>
+                            <div class="womenMenuHeader">WOMEN</div>
+                            <div class="womenMenuLine"></div>
+                            <ul>
+                                <li><a href="#" class="popUpLink">Dresses</a></li>
+                                <li><a href="#" class="popUpLink">Tops</a></li>
+                                <li><a href="#" class="popUpLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="womenMenuBlock">
+                            <div class="womenMenuHeader">WOMEN</div>
+                            <div class="womenMenuLine"></div>
+                            <ul>
+                                <li><a href="#" class="popUpLink">Dresses</a></li>
+                                <li><a href="#" class="popUpLink">Tops</a></li>
+                                <li><a href="#" class="popUpLink">Sweaters/Knits</a></li>
+                                <li><a href="#" class="popUpLink">Jachets/Coats</a></li>
+                            </ul>
+                            <div class="womenMenuImg">
+                                <p>
+                                    SUPER <br>
+                                    SALE!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                 </li>
                  <li> <a href="#">KIDS</a></li>
                  <li> <a href="#">ACCOSERIESE</a></li>
                  <li> <a href="#">FEATURED</a></li>
