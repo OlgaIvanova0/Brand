@@ -93,6 +93,9 @@ body {
     background-color: #e6e6e6;
     color: #000000;
 }
+.popUpMenuBrowse {
+    transition: all .3s;
+}
 .popUpMenuBrowse:hover
 .popUpMenu{
     display: block;
@@ -202,7 +205,13 @@ body {
     right: 135px;
     border-radius: 5px;
     border: 1px solid #dfd9d9;
+    transition: all 5s;
 }
+
+.basketMenu {
+    transition: all 5s;
+}
+
 .basketMenu:hover
 .popUpBasket {
     display: flex;
@@ -922,8 +931,7 @@ body {
 .carousel-caption h3{
     display: block;
     position: absolute;
-    top: 187px;
-    left: 100px;
+    top: 130px;
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 26px;
@@ -934,8 +942,7 @@ body {
 .carousel-caption h5 {
     display: block;
     position: absolute;
-    left: 100px;
-    top: 206px;
+    top: 150px;
     font-size: 13px;
     letter-spacing: 0px;
     line-height: 26px;
@@ -1314,6 +1321,9 @@ footer {
     font-weight: 700;
     font-family: "Lato", sans-serif;
 }
+.collectionButton:hover {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
+}
 .productStars {
     display: flex;
     flex-direction: row;
@@ -1488,5 +1498,207 @@ footer {
 .alsoPrice {
     padding: 0px;
 }
-
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 20px;
+    color: #656565;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+.productHeaderBlock,.productButtonsBlock, .productCartBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    align-items: center;
+}
+.productHeaderBlock {
+    margin-bottom: 23px;
+    margin-top: 90px;
+}
+.productHeaderBlockMainText {
+    width: 500px;
+}
+.productCartBlock {
+    margin-bottom: 29px;
+    padding-right: 17px;
+}
+.aboutProduct {
+    margin-left: -90px;
+    margin-right: 192px;
+    width: 160px;
+}
+.productCartBlockImg {
+    width: 100px;
+    height: 115px;
+}
+.imgBlock1 {
+    background: #c7cdd0 url('img/ShoppingCart1.png') top center no-repeat;
+    background-blend-mode:multiply;
+}
+.imgBlock2 {
+    background: url('img/ShoppingCart2.svg') top center no-repeat;
+}
+.imgBlock3 {
+    background:#c7cdd0 url('img/ShoppingCart3.png') top center no-repeat;
+    background-blend-mode: multiply;
+}
+.productHeaderBlock {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.aboutProductHeader {
+    font-size: 13px;
+    color: #222222;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    text-align: right;
+    padding-bottom: 10px;
+}
+.productMainText {
+    color: #575757;
+    font-weight: 600;
+}
+.productColor, .productSize {
+    display: flex;
+}
+.buttonClear, .buttonContinue {
+    width: 235px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 64px;
+    transition: all 1s;
+}
+.buttonClear:hover, .buttonContinue:hover {
+    color: #f16d7f;
+    border-color: #f16d7f;
+}
+.productStars {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.productHeaderGreyLine {
+    width: 1140px;
+    height: 1px;
+    background-color: #000000;
+    border: 1px solid #eaeaea;
+    margin-bottom: 22px;
+}
+.peopleInfo {
+    align-items: flex-start;
+    padding: 0;
+}
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.infoBlock input {
+    width: 356px;
+    height: 46px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #b1b1b1;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
+.infoBlock input:focus-visible {
+    outline: none;
+}
+.infoBlockHeader {
+    padding-bottom: 22px;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.couponText {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 26px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
+.infoSmallButton{
+    transition: all 1s;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin-bottom: 80px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 11px;
+    color: #4a4a4a;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.infoSmallButton:hover {
+    color: #f16d7f;
+    border-color: #f16d7f;
+}
+.totalGreyBlock {
+    width: 360px;
+    height: 214px;
+    background-color: #f5f3f3;
+}
+.subTotal {
+    font-size: 11px;
+    color: #4a4a4a;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    margin-left: 216px;
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+}
+.grandTotal {
+    margin-left: 154px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.subTotalPrice, .grandTotalPrice {
+    padding-left: 15px;
+}
+.grandTotalPrice {
+    color: #f16d7f;
+}
+.buttonCheckout {
+    transition: all 1s;
+    border: 1px solid #f16d7f;
+    margin-left: 45px;
+    margin-top: 25px;
+    width: 273px;
+    height: 50px;
+    background-color: #f16d7f;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.buttonCheckout:hover {
+    color: #f16d7f;
+    background-color: white;
+}
 
