@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/972d10bebd.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Shopping Cart</title>
+    <title>CHECKOUT</title>
 </head>
 <body>
    <div class="header">
@@ -233,144 +233,85 @@
         </div>
     </div>
    </div>
-   <div class="productDetailsBlock">
-        <div class="container productDetails">
-           <div class="productHeaderBlock">
-              <div class="productHeaderBlockMainText">PRODUCT DETAILS</div>
-              <div class="productHeaderBlockText">UNITE PRICE</div>
-              <div class="productHeaderBlockText">QUANTITY</div>
-              <div class="productHeaderBlockText">SHIPPING</div>
-              <div class="productHeaderBlockText">SUBTOTAL</div>
-              <div class="productHeaderBlockText">ACTION</div>
-           </div>
-           <div class="productHeaderGreyLine"></div>
-           <div class="productCartBlock">
-               <div class="productCartBlockImg imgBlock1"></div>
-               <div class="aboutProduct">
-                   <div class="aboutProductHeader">MANGO PEOPLE T-SHIRT</div>
-                   <div class="blockStars productStars">
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                 </div>
-                   <div class="productColor">
-                       <div class="productMainText">Color: </div>
-                       <div class="productSmallText">red</div>
-                   </div>
-                   <div class="productSize">
-                    <div class="productMainText">Size: </div>
-                    <div class="productSmallText">XL</div>
-                   </div>
+   <div class="container checkout">
+       <details class="datalistCheckout">
+           <summary class="checkoutHeader">
+               01. SHIPPING ADRESS
+           </summary>
+           <div class="checkoutInput">
+               <div class="checkoutLeft">
+                   <div class="checkoutBigText">CHECK AS A GUEST OR REGISTER</div>
+                   <div class="checkoutSmallText">Register with us for future convenience</div>
+                   <form class="checkoutLeftForm" action="#">
+                       <input class="leftFormInput" type="radio" name="radio" id="leftForm">
+                       <label class="leftFormLabel" for="leftForm">CHECKOUT AS GUEST</label><br>
+                       <input class="leftFormInput" type="radio" name="radio" id="register">
+                       <label class="leftFormLabel" for="register">REGISTER</label>
+                   </form>
+                   <div class="checkoutBigText">REGISTER AND SAVE TIME!</div>
+                   <div class="checkoutSmallText">Register with us for future convenience</div>
+                   <a class="checkoutLeftLink" href="#">
+                         <i class="fas fa-angle-double-right"></i>
+                         Fast and easy checkout
+                   </a><br>
+                   <a class="checkoutLeftLink" href="#">
+                         <i class="fas fa-angle-double-right"></i>
+                         Easy access to you order history and status
+                   </a><br>
+                   <button class="checkoutButton">CONTINUE</button>
                </div>
-               <div class="productPrice">$150</div>
-               <div class="productQant">2</div>
-               <div class="productShipp">FREE</div>
-               <div class="productTotal">$300</div>
-               <div class="productAction">
-                     <i class="fas fa-times-circle"></i>
+               <div class="checkoutRight">
+                    <div class="checkoutBigText">ALREADY REGISTED?</div>
+                    <div class="checkoutSmallText">Please log in below</div>
+                    <div class="checkoutInputBigText">
+                         EMAIL ADDRESS
+                         <span>*</span>
+                    </div>
+                    <input class="checkoutRightInput" type="email">
+                    <div class="checkoutInputBigText">
+                        PASSWORD
+                        <span>*</span>
+                   </div>
+                   <input class="checkoutRightInput" type="password">
+                   <div class="checkoutRedText">* Required Fileds</div>
+                   <button class="checkoutButton">LOG IN</button>
+                   <a class="checkoutRightLink" href="#">Forgot Password?</a>
                </div>
            </div>
-           <div class="productHeaderGreyLine"></div>
-           <div class="productCartBlock">
-            <div class="productCartBlockImg imgBlock2"></div>
-            <div class="aboutProduct">
-                <div class="aboutProductHeader">MANGO PEOPLE T-SHIRT</div>
-                <div class="blockStars productStars">
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                 </div>
-                <div class="productColor">
-                    <div class="productMainText">Color: </div>
-                    <div class="productSmallText">red</div>
-                </div>
-                <div class="productSize">
-                 <div class="productMainText">Size: </div>
-                 <div class="productSmallText">XL</div>
-                </div>
-            </div>
-            <div class="productPrice">$150</div>
-            <div class="productQant">2</div>
-            <div class="productShipp">FREE</div>
-            <div class="productTotal">$300</div>
-            <div class="productAction">
-                  <i class="fas fa-times-circle"></i>
-            </div>
-           </div>
-           <div class="productHeaderGreyLine"></div>
-           <div class="productCartBlock">
-            <div class="productCartBlockImg imgBlock3"></div>
-            <div class="aboutProduct">
-                <div class="aboutProductHeader">MANGO PEOPLE T-SHIRT</div>
-                <div class="blockStars productStars">
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                 </div>
-                <div class="productColor">
-                    <div class="productMainText">Color: </div>
-                    <div class="productSmallText">red</div>
-                </div>
-                <div class="productSize">
-                 <div class="productMainText">Size: </div>
-                 <div class="productSmallText">XL</div>
-                </div>
-            </div>
-            <div class="productPrice">$150</div>
-            <div class="productQant">2</div>
-            <div class="productShipp">FREE</div>
-            <div class="productTotal">$300</div>
-            <div class="productAction">
-                  <i class="fas fa-times-circle"></i>
-            </div>
-           </div>
-           <div class="productHeaderGreyLine"></div>
-           <div class="productButtonsBlock">
-               <button class="buttonClear">CLEAR SHOPPING CART</button>
-               <button class="buttonContinue">CONTINUE SHOPPING</button>
-           </div>
-        </div>
+       </details>
+       <div class="checkoutGreyLine"></div>
+       <details class="datalistCheckout">
+            <summary class="checkoutHeader">
+                02. BILLING INFORMATION
+            </summary>
+       </details>
+       <div class="checkoutGreyLine"></div>
+       <details class="datalistCheckout">
+            <summary class="checkoutHeader">
+                03. SHIPPING INFORMATION
+            </summary>
+       </details>
+       <div class="checkoutGreyLine"></div>
+       <details class="datalistCheckout">
+            <summary class="checkoutHeader">
+                04. SHIPPING METHOD
+            </summary>
+       </details>
+       <div class="checkoutGreyLine"></div>
+       <details class="datalistCheckout">
+           <summary class="checkoutHeader">
+                05. PAYMENT METHOD
+           </summary>
+       </details>
+       <div class="checkoutGreyLine"></div>
+       <details class="datalistCheckout">
+           <summary class="checkoutHeader">
+                06. ORDER REVIEW
+           </summary>
+       </details>
+       <div class="checkoutGreyLine"></div>
    </div>
-   <div class="peopleInfoBlock">
-       <div class="container peopleInfo">
-           <div class="infoBlock shipping">
-                <div class="infoBlockHeader">SHIPPING ADRESS</div>
-                <input list="country" placeholder="Bangladesh">
-                <datalist id="country">
-                    <option value="USA"></option>
-                    <option value="Russia"></option>
-                </datalist>
-                <input type="text" name="state" id="state" placeholder="State">
-                <input type="text" name="index" id="index" placeholder="Postcode/Zip">
-                <button class="infoSmallButton">GET A QUOTE</button>
-           </div>
-           <div class="infoBlock coupon">
-                 <div class="infoBlockHeader">COUPON DISCOUNT</div>
-                 <div class="couponText">Enter your coupon code if you have one</div>
-                 <input type="text" name="state" id="state" placeholder="State">
-                 <button class="infoSmallButton">APPLY COUPON</button>
-           </div>
-           <div class="infoBlock total">
-               <div class="totalGreyBlock">
-                   <div class="subTotal">
-                         <div class="subTotalName">SUB TOTAL</div>
-                         <div class="subTotalPrice">$900</div>
-                   </div>
-                   <div class="grandTotal">
-                         <div class="grandTotalName">GRAND TOTAL</div>
-                         <div class="grandTotalPrice">$900</div>
-                   </div>
-                   <button class="buttonCheckout">PROCEED TO CHECKOUT</button> 
-               </div>
-           </div>
-       </div>
-   </div>
+
    <div class="reviews">
     <div class="container reviewsItems">
         <section class="leftReviews">
