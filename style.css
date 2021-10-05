@@ -1330,6 +1330,7 @@ footer {
     color: #ef5b70;
     font-weight: 700;
     font-family: "Lato", sans-serif;
+    transition: all 0.5s;
 }
 .collectionButton:hover {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
@@ -1849,4 +1850,55 @@ footer {
 }
 .checkoutRightInput:focus-visible {
     outline: none;
+}
+.categoryInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+.leftCategory {
+    width: 20%;
+}
+.categoryMenu {
+    display: flex;
+    flex-direction: column;
+}
+.rightProduct {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.rightProductInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.productGreyInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sortBlock, .showBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.miniBlocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.pagesAndButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
