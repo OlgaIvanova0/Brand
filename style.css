@@ -314,6 +314,7 @@ body {
     font-family: "Lato", sans-serif;
     padding-left: 20px;
     border: 2px solid transparent;
+    transition: all 0.5s;
 }
 .headerMyAcc:hover {
     background: #f5f5f5;
@@ -322,7 +323,6 @@ body {
     cursor: pointer;
 }
 .basket:hover {
-    box-shadow:0 0 5px #f16d7f;
     cursor: pointer;
 }
 .fas:hover {
@@ -340,6 +340,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.nav li:hover {
+    border-bottom:3px solid #f16d7f;
+}
 .nav ul{
     display: flex;
     justify-content: space-around;
@@ -354,6 +357,7 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
+    border-bottom: 3px solid transparent;
 }
 .nav li a{
     text-decoration: none;
@@ -365,9 +369,7 @@ body {
     font-weight: 700;
     font-family: "Lato", sans-serif;  
 }
-.nav ul li a:hover {
-    color: #f16d7f;
-}
+
 .miniMenu {
     display: none;
     position: absolute;
@@ -539,6 +541,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.cat {
+    padding: 0;
 }
 .cat a{
     text-decoration: none;
@@ -716,11 +721,11 @@ body {
     padding-top: 15px;
 }
 .blockCard:hover {
-    filter: drop-shadow(0px 5px 4px rgba(0,0,0,0.16));
+    filter: drop-shadow(0px 5px 4px #00000029);
     background-color: #ffffff; 
 }
 .blockImg:hover{
-    background-color: rgba(58,56,56,0.8313725490196079);
+    background-color: #3a3838d4;
     background-blend-mode: soft-light;
 }
 .item {
@@ -755,7 +760,7 @@ body {
     display: flex;
 }
 .boxAdd a:hover {
-    background:#f16d7f; 
+    background:#3a3838d4;
 }
 .buttonBrowse {
     width: 100%;
@@ -779,6 +784,9 @@ body {
     font-weight: 400;
     font-family: "Lato", sans-serif;
     border: 2px solid transparent;
+    transition: all 0.5s;
+    width: 212px;
+    height: 48px;
 }
 .fa-arrow-right {
     color: #ffffff;
@@ -1021,7 +1029,8 @@ input#email:focus-visible {
     font-weight: 400;
     font-family: "Lato", sans-serif;
     text-align: center; 
-    border: none;   
+    border: none; 
+    transition: all 0.5s;
 }
 .emailButton:hover {
     color: #f16d7f;
@@ -1153,6 +1162,7 @@ footer {
     margin: 5px;
     background-color: #ffffff;
     color: #7a7a7a;
+    transition: all 0.5s;
 }
 .footerIcons a:hover {
     background-color: #f16d7f;
