@@ -296,33 +296,43 @@
                    <div class="productInput">
                        <div class="inputHeader">TRENDING NOW</div>
                        <div class="trendingLinks">
-                           <a href="#">Bohemian</a>
-                           <a href="#">Floral</a>
-                           <a href="#">Lace</a>
-                           <br>
-                           <a href="#">Floral</a>
-                           <a href="#">Lace</a>
-                           <a href="#">Bohemian</a>
+                           <div class="trendingLinksFirst">
+                                 <a href="#">Bohemian</a>
+                                 <span>|</span>
+                                 <a href="#">Floral</a>
+                                 <span>|</span>
+                                 <a href="#">Lace</a>
+                                 </div>
+                           <div class="trendingLinksSecond">
+                                 <a href="#">Floral</a>
+                                 <span>|</span>
+                                 <a href="#">Lace</a>
+                                 <span>|</span>
+                                 <a href="#">Bohemian</a>
+                           </div>
                        </div>
                    </div>
                    <div class="productInput">
-                       <div class="inputHeader">SIZE</div>
+                       <div class="inputHeader sizeHeader">SIZE</div>
                        <div class="sizeCheckBox">
-                           <input class="sizeBox" type="checkbox" id="xxs">
-                           <label class="sizeBoxLabel" for="xxs">XXS</label>
-                           <input class="sizeBox" type="checkbox" id="xs">
-                           <label class="sizeBoxLabel" for="xs">XS</label>
-                           <input class="sizeBox" type="checkbox" id="s">
-                           <label class="sizeBoxLabel" for="s">S</label>
-                           <input class="sizeBox" type="checkbox" id="m">
-                           <label class="sizeBoxLabel" for="m">M</label>
-                           <br>
-                           <input class="sizeBox" type="checkbox" id="l">
-                           <label class="sizeBoxLabel" for="l">L</label>
-                           <input class="sizeBox" type="checkbox" id="xl">
-                           <label class="sizeBoxLabel" for="xl">XL</label>
-                           <input class="sizeBox" type="checkbox" id="xxl">
-                           <label class="sizeBoxLabel" for="xxl">XXL</label>
+                           <div class="sizeCheckBoxFirst">
+                                 <input class="sizeBox" type="checkbox" id="xxs">
+                                 <label class="sizeBoxLabel" for="xxs">XXS</label>
+                                 <input class="sizeBox" type="checkbox" id="xs">
+                                 <label class="sizeBoxLabel" for="xs">XS</label>
+                                 <input class="sizeBox" type="checkbox" id="s">
+                                 <label class="sizeBoxLabel" for="s">S</label>
+                                 <input class="sizeBox" type="checkbox" id="m">
+                                 <label class="sizeBoxLabel" for="m">M</label>
+                           </div>
+                           <div class="sizeCheckBoxSecond">
+                                 <input class="sizeBox" type="checkbox" id="l">
+                                 <label class="sizeBoxLabel" for="l">L</label>
+                                 <input class="sizeBox" type="checkbox" id="xl">
+                                 <label class="sizeBoxLabel" for="xl">XL</label>
+                                 <input class="sizeBox" type="checkbox" id="xxl">
+                                 <label class="sizeBoxLabel" for="xxl">XXL</label>
+                           </div>
                        </div>
                    </div>
                    <div class="productInput">
@@ -330,7 +340,7 @@
                        <div class="rangeInput">
                            <form action="#" oninput="result.value=(range.value)">
                            <input type="range" id="range" value="300" step="10" min="0" max="600">
-                           <p>
+                           <p class="output">
                                <output name="result" for="range"></output>$
                            </p>
                            </form>
@@ -340,23 +350,27 @@
                <div class="productGreyInput">
                    <div class="sortBlock">
                        <p class="greyInputText">Sort By</p>
-                       <input list="sortBy" placeholder="Name">
                        <details id="sortBy">
-                           <option value="Prise"></option>
-                           <option value="Sale"></option>
+                           <summary>Name</summary>
+                           <div class="sortByLink">
+                                <a href="#">Prise</a>
+                                <a href="#">Sale</a>
+                           </div>
                        </details>
                    </div>
                    <div class="showBlock">
-                    <p class="greyInputText">Show</p>
-                    <input list="show" placeholder="9">
-                    <details id="show">
-                        <option value="5"></option>
-                        <option value="20"></option>
-                    </details>
+                        <p class="greyInputText">Show</p>
+                        <details id="show">
+                            <summary>9</summary>
+                            <div class="showLink">
+                                <a href="#">5</a>
+                                <a href="#">7</a>
+                           </div>
+                        </details>
                    </div>
                </div>
                <div class="productItems">
-               <div class="miniBlocks">
+                    <div class="miniBlocks">
                         <div class="item productMiniBlocks">    
                              <a href="#" class="blockCard">
                                  <div class="blockImg img11"></div>
@@ -447,10 +461,12 @@
                                 <a href="#"><img src="img/basketWhite.svg" alt="basket">Add to Cart</a>
                             </div>
                         </div>
-               </div>
-               <div class="pagesAndButton">
+                    </div>
+                    <div class="pagesAndButton">
                    <nav class="pages">
-                       <a href="#"></a>
+                       <a href="#">
+                        <i class="fas fa-angle-left pagination-nav-i"></i>
+                       </a>
                        <a href="#">1</a>
                        <a href="#">2</a>
                        <a href="#">3</a>
@@ -459,9 +475,50 @@
                        <a href="#">6</a>
                        <a href="#">...</a>
                        <a href="#">20</a>
-                       <a href="#"></a>
+                       <a href="#">
+                        <i class="fas fa-angle-right pagination-nav-i"></i>
+                       </a>
                    </nav>
-                   <button class="ViewAllButton">View All</button>
+                   <button class="viewAllButton">View All</button>
+                    </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="blackBlockInfo">
+       <div class="container blackBlock">
+           <div class="miniBlackBlock">
+               <div class="blackBlockImg">
+                   <img src="img/pinkCar.svg" alt="car">
+               </div>
+               <div class="blackBlockHeader">Free Delivery</div>
+               <div class="blackBlockText">
+                    Worldwide delivery on all. 
+                    Authorit tively morph 
+                    next-generation innov 
+                    tion with extensive models.
+               </div>
+           </div>
+           <div class="miniBlackBlock">
+               <div class="blackBlockImg pinkSale">
+                   <img src="img/pinkSale.png" alt="sale">
+               </div>
+               <div class="blackBlockHeader">Sales & discounts</div>
+               <div class="blackBlockText">
+                    Worldwide delivery on all. 
+                    Authorit tively morph next-generation 
+                    innov tion with extensive models.
+               </div>
+           </div>
+           <div class="miniBlackBlock">
+               <div class="blackBlockImg">
+                   <img src="img/pinkQween.png" alt="qween">
+               </div>
+               <div class="blackBlockHeader">Quality assurance</div>
+               <div class="blackBlockText">
+                    Worldwide delivery on all. 
+                    Authorit tively morph next-generation 
+                    innov tion with extensive models.
                </div>
            </div>
        </div>
